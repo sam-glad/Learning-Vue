@@ -42,3 +42,10 @@ const app5 = new Vue({
     }
   }
 });
+
+const app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Здравствуйте'
+  }
+});

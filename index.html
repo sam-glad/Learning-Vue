@@ -5,9 +5,21 @@
 </div>
 
 <div id="app-2">
-  <span v-bind:title="message">
+  <p v-bind:title="message">
     Hover your mouse over this text for a few seconds to see its dynamically bound title :)
-  </span>
+  </p>
+</div>
+
+<div id="app-3">
+  <p v-if="seen">
+    Now you see me
+  </p>
+</div>
+
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">{{ todo.name }}</li>
+  </ol>
 </div>
 
 <script src="index.js"></script>

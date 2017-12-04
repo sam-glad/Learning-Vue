@@ -29,3 +29,16 @@ const app4 = new Vue({
     ]
   }
 });
+
+const app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Howdy'
+  },
+  methods: {
+    // SYNTAX NOTE https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7
+    reverseMessage() {
+      this.message = this.message.split('').reverse().join('');
+    }
+  }
+});
